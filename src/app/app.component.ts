@@ -13,7 +13,7 @@ import { NgIf } from '@angular/common';
 })
 export class AppComponent {
 
-  private authService = inject(AuthService);
+  private authService = inject(AuthService); 
 
-  isAdmin = computed(() => this.authService.activePermission() === 'admin');
+  isAdmin = computed(() => this.authService.activePermission() === 'admin'); 
 }

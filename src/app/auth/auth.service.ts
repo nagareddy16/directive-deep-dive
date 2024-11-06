@@ -21,7 +21,6 @@ export class AuthService{
     }
 
     login(){
-        console.log('login');
         this.activePermission.set('guest');
     }
 }
