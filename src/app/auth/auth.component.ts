@@ -11,12 +11,13 @@ import { AuthService } from './auth.service';
 })
 export class AuthComponent {
 
-  emailId =signal('');
-  password =signal('');
+  email ='';
+  password ='';
 
   private authService = inject(AuthService);
 
   onSubmit(){
-    this.authService.authenticate(this.emailId(), this.password());
+    console.log('submitted');
+    this.authService.authenticate(this.email, this.password);
   }
 }
