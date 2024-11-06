@@ -1,0 +1,14 @@
+<h2>Authentication for all the routes.</h2>
+<form (onSubmit)="onSubmit()">
+    <p>
+        <label>EmailId</label>
+        <input type="email" id="email" [(ngModel)]="emailId"/>
+    </p>
+    <p>
+        <label>Password</label>
+        <input type="password" id="password" [(ngModel)]="password">
+    </p>
+    <p>
+        <button>Login</button>
+    </p>
+</form>
