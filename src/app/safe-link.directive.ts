@@ -1,3 +1,4 @@
+import { LogDirective } from './log.directive';
 import { Directive, ElementRef, inject, input } from '@angular/core';
 
 @Directive({
@@ -5,7 +6,8 @@ import { Directive, ElementRef, inject, input } from '@angular/core';
   standalone: true,
   host:{
     '(click)': 'onConfirmPageLeave($event)'
-  }
+  },
+  hostDirectives: [LogDirective]
 })
 export class SafeLinkDirective {
   queryParam = input('myApp');
