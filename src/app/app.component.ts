@@ -3,11 +3,12 @@ import { Component, computed, inject } from '@angular/core';
 import { LearningPathComponent } from "./learning-path/learning-path.component";
 import { AuthComponent } from "./auth/auth.component";
 import { NgIf } from '@angular/common';
+import { AuthDirective } from './auth/auth.directive';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LearningPathComponent, AuthComponent, NgIf],
+  imports: [LearningPathComponent, AuthComponent, NgIf, AuthDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
